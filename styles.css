@@ -169,7 +169,7 @@ button:hover {
 }
 
 .art-cul__title {
-  grid-row: 1/5;
+  grid-row: 1/6;
   background-color: #efe2de;
 }
 
@@ -215,12 +215,20 @@ button:hover {
   width: auto; */
 }
 
-.box_gal img {
-  object-fit: scale-down;
-  height: 50%;
+.gallery_image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  grid-column: 4/6;
+  grid-row: 2/3;
 }
+.gallery_image {
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
 .box_gal {
-  grid-column: 5/6;
+  grid-column: 4/6;
   grid-row: 1/2;
 }
 .box-item__1 {
@@ -232,8 +240,18 @@ button:hover {
   grid-row: 2/3;
 }
 
+.box-item__3 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.box-item__4 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
 .box-item__5 {
-  grid-column: 5/6;
+  grid-column: 4/6;
   grid-row: 3/5;
 }
 
