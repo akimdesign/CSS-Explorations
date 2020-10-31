@@ -1,3 +1,5 @@
+/* Main Items */
+
 body,
 html {
   margin: 0;
@@ -12,24 +14,42 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
+.about p {
+  padding: 5px 35px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.art-cul__title p {
+  color: white;
+}
+
 p {
   padding: 5px 35px;
   margin-bottom: 10px;
-  color: #707b8b;
+  color: #0e5a90;
 }
 
 h1 {
   padding: 20px 0px 0px 30px;
   margin-bottom: 10px;
-  color: #707b8b;
+  color: white;
+}
+
+.box-item__0 h1 {
+  color: #0e5a90;
+}
+
+.box_gal h1 {
+  color: #0e5a90;
 }
 
 h2 {
   padding: 20px 0px 0px 30px;
   margin-bottom: 10px;
-  color: #707b8b;
+  color: #0e5a90;
 }
-
+/* Banner items and nav */
 button {
   border: none;
   background: none;
@@ -38,13 +58,13 @@ button {
   font-size: 1.4rem;
 }
 button:hover {
-  color: #edc6ba;
+  color: #e8d4ab;
   transition: all 0.3s ease-in-out;
 }
 .banner {
   width: 100vw;
   height: 300px;
-  background-color: #707b8b;
+  background-color: #e66b6d;
 }
 
 .ham-logo {
@@ -84,7 +104,7 @@ button:hover {
   height: 40px;
   transform: translate(10px, -10px);
   border-radius: 50%;
-  background: #b7c8cb;
+  background: #0e5a90;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,6 +162,8 @@ button:hover {
   color: #b7c8cb;
 } */
 
+/* Main body sections */
+
 .main-article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -165,12 +187,12 @@ button:hover {
 
 .about {
   grid-row: 1/3;
-  background-color: #efe2de;
+  background-color: #0e5a90;
 }
 
 .art-cul__title {
   grid-row: 1/6;
-  background-color: #efe2de;
+  background-color: #0e5a90;
 }
 
 .photo {
@@ -219,12 +241,20 @@ button:hover {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  grid-column: 4/6;
-  grid-row: 2/3;
 }
 .gallery_image {
   grid-column: 4/6;
   grid-row: 2/3;
+}
+
+.gallery_image__1 {
+  grid-column: 4/6;
+  grid-row: 4/5;
+}
+.box-item__5 img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .box_gal {
@@ -264,6 +294,324 @@ button:hover {
   grid-row: 3/4;
 }
 
+.box-item__8 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+
+.box-item__9 {
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+/* Food Page  */
+
+.main-article__3 {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  /* grid-auto-rows: minmax(auto, 24%); */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px 10px;
+  padding: 20px;
+}
+
+.selector_food {
+  background: #ffffff;
+  border-radius: 9px;
+  width: 105px;
+  height: 4px;
+}
+
+.about_food {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #0e5a90;
+}
+
+.about_food p {
+  color: white;
+}
+/* .food_box:nth-child(odd) {
+  background-color: #0e5a90;
+} */
+
+/* .food_box:nth-child(even) {
+  background-color: #e66b6d;
+} */
+
+.food_box__1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.food_box__2 {
+  grid-row: 1/2;
+  grid-column: 3/7;
+}
+
+.food_box__2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.food_box__3 {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.food_box__3 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.food_box__4 {
+  grid-row: 2/3;
+  grid-column: 3/5;
+}
+
+.food_box__5 {
+  grid-row: 2/3;
+  grid-column: 5/7;
+}
+
+.food_box__5 p {
+  padding-top: 68px;
+}
+
+.food_box__6 {
+  grid-row: 3/4;
+  grid-column: 3/5;
+}
+
+.food_box__7 {
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+.food_box__8 {
+  grid-row: 3/4;
+  grid-column: 5/7;
+}
+
+.food_box__9 {
+  grid-row: 4/5;
+  grid-column: 3/5;
+}
+
+.food_box__9 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.food_box__10 {
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+
+.food_box__10 img {
+  object-fit: cover;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.food_box__11 {
+  grid-row: 4/5;
+  grid-column: 5/7;
+}
+
+.food_box__11 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.food_box__12 {
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+.food_box__13 {
+  grid-row: 5/6;
+  grid-column: 3/5;
+}
+
+.food_box__14 {
+  grid-row: 5/6;
+  grid-column: 5/7;
+}
+
+.food_box__15 {
+  grid-row: 6/7;
+  grid-column: 1/3;
+}
+
+.food_box__15 img {
+  object-fit: cover;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.food_box__16 {
+  grid-row: 6/7;
+  grid-column: 3/5;
+}
+
+.food_box__16 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.food_box__17 {
+  grid-row: 6/7;
+  grid-column: 5/7;
+}
+
+.food_box__17 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Outdoor Adventure */
+
+.selector_outdoor {
+  background: #ffffff;
+  border-radius: 9px;
+  width: 152px;
+  height: 4px;
+}
+
+.main-article__4 {
+  display: grid;
+  /* grid-auto-columns: repeat(5, 1fr); */
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  /* grid-auto-rows: minmax(200px, auto); */
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: 25% repeat(3, 1fr);
+  /* grid-template-columns: minmax(auto, 25%) 1fr 3em; */
+  gap: 10px 10px;
+  padding: 20px;
+}
+
+.about_outdoor {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #0e5a90;
+}
+
+.about_outdoor p {
+  color: white;
+}
+
+/* .outdoor_box:nth-child(odd) {
+  background-color: #e66b6d;
+}
+
+.outdoor_box:nth-child(even) {
+  background-color: #0e5a90;
+} */
+
+.outdoor_img_1 img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.outdoor_img_1 {
+  grid-row: 1/2;
+  grid-column: 2/4;
+}
+
+.outdoor_img_2 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.outdoor_img_2 {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
+.outdoor_img_3 img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.outdoor_img_3 {
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+
+.outdoor_img_4 img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.outdoor_img_4 {
+  grid-row: 4/5;
+  grid-column: 3/5;
+}
+
+.outdoor_box h1 {
+  color: #e66b6d;
+}
+
+.westfield {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.tiffany {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.devil {
+  grid-row: 3/4;
+  grid-column: 4/5;
+}
+
+.sassafras {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.waterfalls_info {
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+.albion {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+
+.albion img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tiffany_falls {
+  grid-row: 5/6;
+  grid-column: 4/5;
+}
+
+.tiffany_falls img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Media Queries */
+
 @media screen and (max-width: 480px) {
   .ham-logo {
     width: auto;
@@ -283,3 +631,8 @@ button:hover {
     transition: all 1s;
   }
 }
+/* 
+@media screen and (min-width: 932px) {
+  .food_box__2 img {
+  }
+} */
