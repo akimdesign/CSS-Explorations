@@ -67,6 +67,13 @@ button:hover {
   background-color: #ac9c7f;
 }
 
+.audio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #0e5a90;
+}
+
 .ham-logo {
   height: 15rem;
   width: auto;
